@@ -93,7 +93,7 @@
 <div class="p-2">
     <div class="d-flex justify-content-between align-items-center mb-2">
         <span class="text-lg font-weight-bold"> DRAMA CHINA</span>
-        <a href="" class="text-warning" style="white-space: nowrap;">Selengkapnya</a>
+        <a href="" class="text-lime" style="white-space: nowrap;">Selengkapnya</a>
     </div>
     <div class="d-flex overflow-auto" style="gap: 0.5rem;">
         @foreach (topmovie() as $item)
