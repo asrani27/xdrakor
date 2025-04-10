@@ -69,7 +69,7 @@
         <a href="" class="text-warning" style="white-space: nowrap;">Selengkapnya</a>
     </div>
     <div class="d-flex overflow-auto" style="gap: 0.5rem;">
-        @foreach (topmovie() as $item)
+        @foreach (latestSeries() as $item)
         <div style="min-width: 8rem; max-width: 180px;" class="flex-shrink-0">
             <div class="card card-widget widget-user">
                 <a href="/movie/{{$item->slug}}">
