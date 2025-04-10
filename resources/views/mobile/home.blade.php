@@ -8,8 +8,10 @@
     maksimal.
 </div> --}}
 <div class="p-2">
-    <span class="text-lg" style="text-align: left; font-weight:bold"> BARU UPDATE</span><br />
-
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <span class="text-lg font-weight-bold">BARU UPDATE</span>
+        <a href="" class="text-warning" style="white-space: nowrap;">Selengkapnya</a>
+    </div>
     <div class="d-flex overflow-auto" style="gap: 0.5rem;">
         @foreach (topmovie() as $item)
         <div style="min-width: 8rem; max-width: 180px;" class="flex-shrink-0">
@@ -34,7 +36,10 @@
 
 
 <div class="p-2">
-    <span class="text-lg" style="text-align: left; font-weight:bold"> PALING POPULER</span><br />
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <span class="text-lg font-weight-bold"> PALING POPULER</span>
+        <a href="" class="text-warning" style="white-space: nowrap;">Selengkapnya</a>
+    </div>
     <div class="d-flex overflow-auto" style="gap: 0.5rem;">
         @foreach (topmovie() as $item)
         <div style="min-width: 8rem; max-width: 180px;" class="flex-shrink-0">
@@ -59,7 +64,10 @@
 
 
 <div class="p-2">
-    <span class="text-lg" style="text-align: left; font-weight:bold"> FILM INDO</span><br />
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <span class="text-lg font-weight-bold"> FILM INDO</span>
+        <a href="" class="text-warning" style="white-space: nowrap;">Selengkapnya</a>
+    </div>
     <div class="d-flex overflow-auto" style="gap: 0.5rem;">
         @foreach (topmovie() as $item)
         <div style="min-width: 8rem; max-width: 180px;" class="flex-shrink-0">
@@ -83,7 +91,10 @@
 </div>
 
 <div class="p-2">
-    <span class="text-lg" style="text-align: left; font-weight:bold"> DRAMA CHINA</span><br />
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <span class="text-lg font-weight-bold"> DRAMA CHINA</span>
+        <a href="" class="text-warning" style="white-space: nowrap;">Selengkapnya</a>
+    </div>
     <div class="d-flex overflow-auto" style="gap: 0.5rem;">
         @foreach (topmovie() as $item)
         <div style="min-width: 8rem; max-width: 180px;" class="flex-shrink-0">
