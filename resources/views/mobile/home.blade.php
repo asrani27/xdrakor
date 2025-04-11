@@ -42,7 +42,7 @@
     </div>
     <div class="d-flex overflow-auto" style="gap: 0.5rem;">
         @foreach (topmovie() as $item)
-        <div style="min-width: 8rem; max-width: 180px;" class="flex-shrink-0">
+        <div style="min-width: 7rem; max-width: 180px;" class="flex-shrink-0">
             <div class="card card-widget widget-user">
                 <a href="/movie/{{$item->slug}}">
                     <div class="widget-user-header text-white text-right"
@@ -70,7 +70,7 @@
     </div>
     <div class="d-flex overflow-auto" style="gap: 0.5rem;">
         @foreach (latestSeries() as $item)
-        <div style="min-width: 8rem; max-width: 180px;" class="flex-shrink-0">
+        <div style="min-width: 7rem; max-width: 180px;" class="flex-shrink-0">
             <div class="card card-widget widget-user">
                 <a href="/movie/{{$item->slug}}">
                     <div class="widget-user-header text-white text-right"
@@ -97,7 +97,7 @@
     </div>
     <div class="d-flex overflow-auto" style="gap: 0.5rem;">
         @foreach (topmovie() as $item)
-        <div style="min-width: 8rem; max-width: 180px;" class="flex-shrink-0">
+        <div style="min-width: 7rem; max-width: 180px;" class="flex-shrink-0">
             <div class="card card-widget widget-user">
                 <a href="/movie/{{$item->slug}}">
                     <div class="widget-user-header text-white text-right"
