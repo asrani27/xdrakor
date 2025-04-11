@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "id.my.asrani.drakor.twa",
+        "sha256_cert_fingerprints": ["14:BA:6E:3C:C5:29:6A:CE:23:4B:E9:8C:1C:DF:1F:F3:EB:C1:62:B9:E2:F4:5B:C2:0D:2C:1C:54:FF:64:1D:5D"]
+      }
+    }]
