@@ -6,14 +6,20 @@
     "description": "Nonton Drama Korea Subtitle Indonesia.",
     "display": "fullscreen",
     "theme_color": "#6777ef",
-    "icons": [
-      {
-        "src": "xdrakor.png",
-        "sizes": "512x512",
-        "type": "image/png",
-        "purpose": "any maskable"
-      }
-    ],
+   "icons": [
+        {
+            "src": "/icon/android/android-launchericon-512-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/icon/android/android-launchericon-512-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+        ],
     "id": "XD",
     "lang": "id",
     "dir": "auto",
