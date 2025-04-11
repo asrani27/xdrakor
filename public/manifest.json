@@ -17,5 +17,9 @@
     "id": "XD",
     "lang": "id",
     "dir": "auto",
-    "orientation": "any"
+    "orientation": "any",
+    "categories": [
+      "entertainment",
+      "productivity"
+    ]
   }
