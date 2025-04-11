@@ -46,11 +46,19 @@ const returnFromCache = function (request) {
     });
 };
 
-self.addEventListener('fetch', (event) => {
-    event.respondWith(
-      caches.match(event.request).then((response) => {
-        return response || fetch(event.request);
-      })
-    );
-  });
+// self.addEventListener('fetch', (event) => {
+//     event.respondWith(
+//       caches.match(event.request).then((response) => {
+//         return response || fetch(event.request);
+//       })
+//     );
+//   });
 
+  self.addEventListener("fetch", function (event) {
+    event.respondWith(checkResponse(event.request).catch(function () {
+        return returnFromCache(event.request);
+    }));
+    if(!event.request.url.startsWith('http')){
+        event.waitUntil(addToCache(event.request));
+    }
+});
