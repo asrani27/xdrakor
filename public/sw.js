@@ -47,19 +47,29 @@ const returnFromCache = function (request) {
 };
 
 self.addEventListener('fetch', function(event) {
-    // Hanya tangani request dari domain kita sendiri dan dengan protokol http/https
-    if (event.request.url.startsWith(self.location.origin) &&
-        (event.request.url.startsWith('http://') || event.request.url.startsWith('https://'))) {
-        
+    // Cek hanya untuk request http/https dari origin kita
+    if (
+        event.request.url.startsWith(self.location.origin) &&
+        (event.request.url.startsWith('http://') || event.request.url.startsWith('https://'))
+    ) {
         event.respondWith(
             caches.match(event.request).then(function(response) {
                 return response || fetch(event.request).then(function(res) {
                     return caches.open('offline').then(function(cache) {
-                        cache.put(event.request, res.clone()).catch(err => {
-                            console.warn('Gagal cache:', event.request.url, err);
-                        });
+                        // Bungkus cache.put dengan try-catch supaya error tidak nongol di console
+                        try {
+                            cache.put(event.request, res.clone());
+                        } catch (e) {
+                            // Optional: console.warn('Gagal cache:', e);
+                        }
+                        return res;
                     });
+                }).catch(function() {
+                    // Fallback jika fetch gagal total
+                    return caches.match('/offline.html');
                 });
+            }).catch(function() {
+                return caches.match('/offline.html');
             })
         );
     }
