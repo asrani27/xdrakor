@@ -52,7 +52,7 @@
     </style>
 </head>
 
-<body>
+<body style="display: flex; flex-direction: column; min-height: 100dvh;">
     <div class="content">
         <h4>Selamat datang di XDRAKOR,<br />Tempat Nonton Drama Korea Subtitle Indonesia</h4>
         <a href="#" class="btn btn-lg btn-warning btn-block">Get Started</a>
