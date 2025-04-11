@@ -4,7 +4,7 @@
     "start_url": "/",
     "background_color": "#6777ef",
     "description": "Nonton Drama Korea Subtitle Indonesia.",
-    "display": "fullscreen",
+    "display": "standalone",
     "theme_color": "#6777ef",
    "icons": [
         {
