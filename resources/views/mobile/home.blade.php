@@ -14,7 +14,7 @@
     </div>
     <div class="d-flex overflow-auto" style="gap: 0.5rem;">
         @foreach (topmovie() as $item)
-        <div style="min-width: 8rem; max-width: 180px;" class="flex-shrink-0">
+        <div style="min-width: 7rem; max-width: 180px;" class="flex-shrink-0">
             <div class="card card-widget widget-user">
                 <a href="/movie/{{$item->slug}}">
                     <div class="widget-user-header text-white text-right"
@@ -35,7 +35,7 @@
 </div>
 
 
-<div class="p-2">
+{{-- <div class="p-2">
     <div class="d-flex justify-content-between align-items-center mb-2">
         <span class="text-lg font-weight-bold"> DRAKOR ONGOING</span>
         <a href="" class="text-warning" style="white-space: nowrap;">Selengkapnya</a>
@@ -115,5 +115,5 @@
         </div>
         @endforeach
     </div>
-</div>
+</div> --}}
 @endsection
