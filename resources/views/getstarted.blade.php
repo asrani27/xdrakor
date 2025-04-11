@@ -41,7 +41,7 @@
             text-align: center;
         }
 
-        .content h4 {
+        .content h5 {
             color: white;
             margin-bottom: 20px;
         }
@@ -52,9 +52,9 @@
     </style>
 </head>
 
-<body style="display: flex; flex-direction: column; min-height: 100dvh;">
+<body>
     <div class="content">
-        <h4>Selamat datang di XDRAKOR,<br />Tempat Nonton Drama Korea Subtitle Indonesia</h4>
+        <h5>Selamat datang di XDRAKOR,<br />Tempat Nonton Drama Korea Subtitle Indonesia</h5>
         <a href="#" class="btn btn-lg btn-warning btn-block">Get Started</a>
     </div>
 
