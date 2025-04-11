@@ -21,7 +21,8 @@ class FrontController extends Controller
                 return redirect('/user/beranda');
             }
         } else {
-            return view('mobile.home');
+            return view('getstarted');
+            //return view('mobile.home');
         }
     }
     public function request()

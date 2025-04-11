@@ -25,7 +25,9 @@ Route::get('/sitemap.xml', function () {
 });
 
 Route::get('/', [FrontController::class, 'index']);
-
+Route::get('/adblock', function () {
+    return view('adblock');
+});
 Route::get('/login', [LoginController::class, 'index']);
 Route::post('/login', [LoginController::class, 'login']);
 Route::get('/logout', [LogoutController::class, 'logout']);
