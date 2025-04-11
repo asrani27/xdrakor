@@ -35,7 +35,7 @@
 </div>
 
 
-{{-- <div class="p-2">
+<div class="p-2">
     <div class="d-flex justify-content-between align-items-center mb-2">
         <span class="text-lg font-weight-bold"> DRAKOR ONGOING</span>
         <a href="" class="text-warning" style="white-space: nowrap;">Selengkapnya</a>
@@ -115,5 +115,5 @@
         </div>
         @endforeach
     </div>
-</div> --}}
+</div>
 @endsection
