@@ -51,6 +51,10 @@
         .btn-warning {
             font-weight: bold;
         }
+
+        .text-bold {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
     </style>
     <!-- manifest -->
     <link rel="manifest" href="/manifest.json">
