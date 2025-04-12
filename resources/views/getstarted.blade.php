@@ -53,7 +53,7 @@
             font-weight: bold;
         }
     </style>
-    {{-- @laravelPWA --}}
+    @laravelPWA
 </head>
 
 <body>
