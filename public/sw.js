@@ -1,11 +1,7 @@
 const CACHE_NAME = 'laravel11-pwa-v2';
 
 const urlsToCache = [
-    '/',
-    '/offline',
-    '/build/assets/app-Bc8T2CRF.css',
-    '/build/assets/app-HX-J-vxX.js',
-    '/build/assets/app-l0sNRNKZ.js'
+    '/'
 ];
 
 // Install - cache static files

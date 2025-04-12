@@ -63,7 +63,7 @@
 
 <body>
     <div class="content">
-        <h5>Selamat datang di XDRAKOR,<br />Tempat Nonton Drama Korea Subtitle Indonesia</h5>
+        <h5 class="text-bold">Selamat datang di XDRAKOR,<br />Tempat Nonton Drama Korea Subtitle Indonesia</h5>
         <a href="#" class="btn btn-lg btn-warning btn-block">Get Started</a>
     </div>
 
