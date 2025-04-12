@@ -22,7 +22,7 @@
             justify-content: center;
             position: relative;
             overflow: hidden;
-            background: linear-gradient(to top, #000000 0%, #fffefe 100%);
+            background: linear-gradient(to top, #000000 30%, #bab8b8 100%);
             /* Untuk perangkat dengan notch dan nav bar */
         }
 
@@ -33,7 +33,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('/images/masuk.png');
+            background-image: url('/images/masuk2.jpg');
             background-size: cover;
             background-position: center;
             opacity: 0.3;
@@ -42,8 +42,7 @@
     </style>
 </head>
 
-<body class="hold-transition login-page"
-    style="background: rgb(35, 32, 39); background: linear-gradient(48deg, #6f42c1 0%, #c0b5d5 100%);">
+<body class="hold-transition login-page">
     <div class="login-box">
         <!-- /.login-logo -->
         <div class="card">
