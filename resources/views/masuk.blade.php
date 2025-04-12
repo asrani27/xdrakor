@@ -17,7 +17,7 @@
 </head>
 
 <body class="hold-transition login-page"
-    style="background: rgb(188, 88, 60); background: linear-gradient(48deg, #6f42c1 0%, #c0b5d5 100%);">
+    style="background: rgb(35, 32, 39); background: linear-gradient(48deg, #6f42c1 0%, #c0b5d5 100%);">
     <div class="login-box">
         <!-- /.login-logo -->
         <div class="card">
@@ -110,8 +110,8 @@
     </div>
     <!-- /.login-box -->
 
-    <script src="/assets/plugins/jquery/jquery.min.js"></script>
-    <script src="/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/muvnix/plugins/jquery/jquery.min.js"></script>
+    <script src="/muvnix/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     @stack('js')
     <script type="text/javascript">
         @include('layouts.notif')
