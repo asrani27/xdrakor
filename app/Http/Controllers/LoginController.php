@@ -80,7 +80,7 @@ class LoginController extends Controller
 
                 Auth::login($finduser);
                 session()->regenerate();
-                return redirect('/user/home');
+                return redirect('/visitor/home');
             } else {
 
                 $newUser = User::create([
