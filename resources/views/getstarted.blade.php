@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/muvnix/dist/css/adminlte.min.css" />
 
     <style>
+        body {}
+
         body {
             margin: 0;
             height: 100vh;
@@ -20,6 +22,10 @@
             position: relative;
             overflow: hidden;
             background: linear-gradient(to top, #000000 0%, #fffefe 100%);
+
+            background-color: #000000;
+            padding-bottom: env(safe-area-inset-bottom);
+            /* Untuk perangkat dengan notch dan nav bar */
         }
 
         body::before {
@@ -50,6 +56,11 @@
             font-weight: bold;
         }
     </style>
+
+    <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     @laravelPWA
 </head>
 
