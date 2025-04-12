@@ -1,8 +1,11 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "id.my.asrani.drakor.twa",
-    "sha256_cert_fingerprints": ["35:14:7F:35:E9:35:F3:69:1A:95:19:0B:00:2A:92:77:30:DD:2B:9A:6A:22:0F:93:7F:4F:86:62:CF:C5:5C:7F"]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "id.my.asrani.drakor.twa",
+      "sha256_cert_fingerprints":
+        ["A2:2C:C4:B1:01:A0:E6:70:E6:23:0D:6A:7A:67:C9:2C:68:2A:36:B5:27:AB:C8:AE:BD:16:19:4A:8D:45:37:6F"]
+    }
   }
-}]
+]
