@@ -17,6 +17,8 @@ class FrontController extends Controller
         if (Auth::check()) {
             if (Auth::user()->roles == 'superadmin') {
                 return redirect('/superadmin/beranda');
+            } elseif (Auth::user()->roles == 'visitor') {
+                return redirect('/visitor/beranda');
             } else {
                 return redirect('/user/beranda');
             }
