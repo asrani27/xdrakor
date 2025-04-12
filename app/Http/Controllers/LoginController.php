@@ -25,6 +25,10 @@ class LoginController extends Controller
         }
         return view('login');
     }
+    public function masuk()
+    {
+        return view('masuk');
+    }
     public function login(Request $req)
     {
         if ($req->get('cf-turnstile-response') == null) {
