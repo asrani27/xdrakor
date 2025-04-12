@@ -8,16 +8,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <link rel="stylesheet" href="/muvnix/plugins/fontawesome-free/css/all.min.css">
-    <script src="/js/anti-adblock.js"></script>
-    <style>
-        .adsbox {
-            height: 1px;
-            width: 1px;
-            position: absolute;
-            top: -1000px;
-            left: -1000px;
-        }
-    </style>
+
     <link rel="stylesheet" href="/muvnix/dist/css/adminlte.min.css">
     @laravelPWA
 </head>
@@ -108,7 +99,6 @@
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <section class="content" style="padding:0px;">
-                <div class="adsbox" id="ad-test"></div>
                 @yield('content')
             </section>
         </div>
