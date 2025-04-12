@@ -53,7 +53,7 @@
         }
 
         .text-bold {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 0px 2px 5px rgba(0, 0, 0, 10);
         }
     </style>
     <!-- manifest -->
