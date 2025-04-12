@@ -1,11 +1,13 @@
 {
-    "name": "Laravel 11 PWA",
-    "short_name": "L11PWA",
+    "name": "XDRAKOR : Drama Korea Sub Indo",
+    "short_name": "XDRAKOR",
     "start_url": "/",
+    "id": "/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#0d6efd",
     "orientation": "portrait",
+    "description": "XDRAKOR - Nonton Drama Korea Subtitle Indonesia.",
     "icons": [
       {
         "src": "/images/icons/icon-192x192.png",
