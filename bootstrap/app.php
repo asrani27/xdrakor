@@ -25,6 +25,11 @@ return Application::configure(basePath: dirname(__DIR__))
             'user' => \App\Http\Middleware\User::class,
         ]);
     })
+    ->withMiddleware(function (Middleware $middleware) {
+        $middleware->alias([
+            'visitor' => \App\Http\Middleware\Visitor::class,
+        ]);
+    })
     ->withExceptions(function (Exceptions $exceptions) {
         //
     })->create();
