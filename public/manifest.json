@@ -8,6 +8,21 @@
     "theme_color": "#0d6efd",
     "orientation": "portrait",
     "description": "XDRAKOR - Nonton Drama Korea Subtitle Indonesia.",
+    "launch_handler": {
+        "client_mode": "focus-existing"
+      },
+    "screenshots": [
+        {
+            "src": "/images/screenshots/sc1.png",
+            "sizes": "1280x720",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/screenshots/sc2.png",
+            "sizes": "1280x720",
+            "type": "image/png"
+        }
+    ],
     "icons": [
       {
         "src": "/images/icons/icon-192x192.png",
