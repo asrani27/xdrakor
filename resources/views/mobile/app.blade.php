@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/muvnix/plugins/fontawesome-free/css/all.min.css">
 
     <link rel="stylesheet" href="/muvnix/dist/css/adminlte.min.css">
-    @laravelPWA
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed sidebar-closed sidebar-collapse dark-mode">
