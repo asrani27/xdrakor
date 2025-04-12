@@ -14,6 +14,8 @@
     <!-- manifest -->
     <link rel="manifest" href="/manifest.json">
 
+    <meta name="theme-color" content="#000000">
+
     <!-- icons (optional, agar muncul di layar utama saat install) -->
     <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
     <meta name="mobile-web-app-capable" content="yes">
