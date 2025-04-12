@@ -1,4 +1,4 @@
-const CACHE_NAME = 'laravel11-pwa-v1';
+const CACHE_NAME = 'laravel11-pwa-v2';
 
 const urlsToCache = [
     '/',
