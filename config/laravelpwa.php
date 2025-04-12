@@ -63,14 +63,18 @@ return [
                 'description' => 'Shortcut Link 1 Description',
                 'url' => '/shortcutlink1',
                 'icons' => [
-                    "src" => "/images/icons/icon-72x72.png",
+                    "src" => "/images/icons/icon-96x96.png",
                     "purpose" => "any"
                 ]
             ],
             [
                 'name' => 'Shortcut Link 2',
                 'description' => 'Shortcut Link 2 Description',
-                'url' => '/shortcutlink2'
+                'url' => '/shortcutlink2',
+                'icons' => [
+                    "src" => "/images/icons/icon-96x96.png",
+                    "purpose" => "any"
+                ]
             ]
         ],
         'custom' => []
