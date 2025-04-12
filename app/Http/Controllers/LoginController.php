@@ -20,6 +20,9 @@ class LoginController extends Controller
             } elseif (Auth::user()->roles == 'anggota') {
                 Session::flash('success', 'Selamat Datang');
                 return redirect('/user/beranda');
+            } elseif (Auth::user()->roles == 'visitor') {
+                Session::flash('success', 'Selamat Datang');
+                return redirect('/visitor/beranda');
             } else {
                 Session::flash('success', 'Selamat Datang');
                 return 'role lain';
@@ -53,6 +56,9 @@ class LoginController extends Controller
                     } elseif (Auth::user()->roles == 'anggota') {
                         Session::flash('success', 'Selamat Datang');
                         return redirect('/user/beranda');
+                    } elseif (Auth::user()->roles == 'visitor') {
+                        Session::flash('success', 'Selamat Datang');
+                        return redirect('/visitor/beranda');
                     } else {
                         Session::flash('success', 'Selamat Datang');
                         return 'role lain';
@@ -80,7 +86,7 @@ class LoginController extends Controller
 
                 Auth::login($finduser);
                 session()->regenerate();
-                return redirect('/visitor/home');
+                return redirect('/visitor/beranda');
             } else {
 
                 $newUser = User::create([
@@ -94,7 +100,7 @@ class LoginController extends Controller
                 $newUser->markEmailAsVerified();
                 Auth::login($newUser);
 
-                return redirect('/visitor/home');
+                return redirect('/visitor/beranda');
             }
         } catch (Exception $e) {
             dd($e->getMessage());

@@ -107,7 +107,7 @@ Route::middleware(['superadmin'])->group(function () {
 
 Route::middleware(['visitor'])->group(function () {
     Route::prefix('visitor')->group(function () {
-        Route::get('/home', [VisitorController::class, 'home']);
+        Route::get('/beranda', [VisitorController::class, 'home']);
     });
 });
 Route::middleware(['anggota'])->group(function () {
