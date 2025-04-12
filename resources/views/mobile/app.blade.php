@@ -11,6 +11,13 @@
 
     <link rel="stylesheet" href="/muvnix/dist/css/adminlte.min.css">
 
+    <!-- manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0d6efd">
+
+    <!-- icons (optional, agar muncul di layar utama saat install) -->
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    <meta name="mobile-web-app-capable" content="yes">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed sidebar-closed sidebar-collapse dark-mode">
@@ -109,6 +116,13 @@
 
     <script src="/muvnix/plugins/jquery/jquery.min.js"></script>
     <script src="/muvnix/dist/js/adminlte.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then(reg => console.log('SW registered:', reg))
+                .catch(err => console.error('SW registration failed:', err));
+        }
+    </script>
 </body>
 
 </html>
