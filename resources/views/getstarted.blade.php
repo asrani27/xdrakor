@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="/muvnix/dist/css/adminlte.min.css" />
 
     <style>
-        body {}
-
         body {
             margin: 0;
             height: 100vh;
