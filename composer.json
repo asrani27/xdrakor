@@ -12,10 +12,10 @@
         "jenssegers/agent": "^2.6",
         "jorenvanhocht/laravel-share": "^4.2",
         "kalynasolutions/laravel-tus": "^1.2",
-        "ladumor/laravel-pwa": "^0.0.4",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
         "phpoffice/phpspreadsheet": "^2.2",
+        "silviolleite/laravelpwa": "^2.0",
         "voku/simple_html_dom": "^4.8"
     },
     "require-dev": {
