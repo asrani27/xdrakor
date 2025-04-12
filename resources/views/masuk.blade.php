@@ -13,6 +13,21 @@
     @stack('css')
     <link rel="stylesheet" href="/notif/dist/css/iziToast.min.css">
     <script src="/notif/dist/js/iziToast.min.js" type="text/javascript"></script>
+    <style>
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/images/masuk.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            z-index: -1;
+        }
+    </style>
 </head>
 
 <body class="hold-transition login-page"
