@@ -18,6 +18,14 @@
     <!-- icons (optional, agar muncul di layar utama saat install) -->
     <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
     <meta name="mobile-web-app-capable" content="yes">
+    <style>
+        body {
+            padding-top: env(safe-area-inset-top);
+            /* Jaga konten di bawah area status bar */
+            padding-bottom: env(safe-area-inset-bottom);
+            /* Hindari konten tertutup navigation bar */
+        }
+    </style>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed sidebar-closed sidebar-collapse dark-mode">
