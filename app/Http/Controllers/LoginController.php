@@ -89,12 +89,12 @@ class LoginController extends Controller
                     'roles' => 'visitor',
                     'gauth_id' => $user->id,
                     'gauth_type' => 'google',
-                    'password' => encrypt('user@123'),
+                    'password' => encrypt('visitor@123'),
                 ]);
                 $newUser->markEmailAsVerified();
                 Auth::login($newUser);
 
-                return redirect('/user/home');
+                return redirect('/visitor/home');
             }
         } catch (Exception $e) {
             dd($e->getMessage());
