@@ -6,7 +6,7 @@ return [
         'name' => env('APP_NAME', 'My PWA App'),
         'short_name' => 'PWA',
         'start_url' => env('APP_URL', 'http://localhost:8000'),
-        'background_color' => '#ffffff',
+        'background_color' => '#000000',
         'theme_color' => '#000000',
         'display' => 'standalone',
         'orientation' => 'any',
