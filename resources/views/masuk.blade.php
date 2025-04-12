@@ -47,11 +47,11 @@
                     <div class="row">
                         <!-- /.col -->
                         <div class="col-12 text-center">
-                            <button type="submit" class="btn bg-gradient-purple float-left"><i
+                            {{-- <button type="submit" class="btn bg-gradient-purple float-left"><i
                                     class="fa fa-arrow-right"></i> Log In</button>
                             <button type="submit" class="btn bg-gradient-purple float-right"><i class="fa fa-edit"></i>
                                 Register</button>
-                            <br /><br />
+                            <br /><br /> --}}
                             <strong>OR </strong><br />
                             <a href="https://rekrutmen.banjarmasinmemanggil.com/oauth/google"
                                 class="btn btn-outline-dark btn-block">
