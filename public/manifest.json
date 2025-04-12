@@ -1,9 +1,9 @@
 {
-    "name": "Nama Aplikasi",
-    "short_name": "App",
+    "name": "Laravel 11 PWA",
+    "short_name": "L11PWA",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#000000",
+    "background_color": "#ffffff",
     "theme_color": "#0d6efd",
     "orientation": "portrait",
     "icons": [
