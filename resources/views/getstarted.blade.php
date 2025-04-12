@@ -20,7 +20,7 @@
             justify-content: center;
             position: relative;
             overflow: hidden;
-            background: linear-gradient(to top, #000000 0%, #fffefe 100%);
+            /* background: linear-gradient(to top, #000000 0%, #fffefe 100%); */
             /* Untuk perangkat dengan notch dan nav bar */
         }
 
