@@ -68,7 +68,8 @@
 <body>
     <div class="content">
         <h5 class="text-bold">Selamat datang di XDRAKOR,<br />Tempat Nonton Drama Korea Subtitle Indonesia</h5>
-        <a href="/masuk" class="btn btn-lg bg-gradient-purple btn-block">Get Started</a>
+        <a href="/masuk" class="btn btn-lg bg-gradient-purple btn-block text-bold"> <i
+                class="fa fa-chevron-circle-right"></i> Get Started</a>
     </div>
 
     <script src="/muvnix/plugins/jquery/jquery.min.js"></script>
