@@ -84,7 +84,7 @@
                     style="opacity: .8; width:20%;margin-top:30px; margin-bottom:10px"><br />
                 <div style="padding: 0px 0px">
                     <span class="small-text text-white text-bold">ASRANI</span><br />
-                    Free Account
+                    Trial Account
                 </div>
                 <br />
             </div>
