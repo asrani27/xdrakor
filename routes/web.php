@@ -29,6 +29,7 @@ Route::get('/offline', [FrontController::class, 'offline']);
 Route::get('/adblock', function () {
     return view('adblock');
 });
+Route::get('/masuk', [LoginController::class, 'masuk']);
 Route::get('/login', [LoginController::class, 'index']);
 Route::post('/login', [LoginController::class, 'login']);
 Route::get('/logout', [LogoutController::class, 'logout']);
