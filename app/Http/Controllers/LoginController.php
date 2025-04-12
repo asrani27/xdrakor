@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
@@ -61,6 +62,42 @@ class LoginController extends Controller
                     return back();
                 }
             }
+        }
+    }
+    public function redirectToProvider()
+    {
+        return Socialite::driver('google')->redirect();
+    }
+    public function handleProviderCallback()
+    {
+        try {
+
+            $user = Socialite::driver('google')->stateless()->user();
+            //dd($user);
+            $finduser = User::where('gauth_id', $user->id)->first();
+
+            if ($finduser) {
+
+                Auth::login($finduser);
+                session()->regenerate();
+                return redirect('/user/home');
+            } else {
+
+                $newUser = User::create([
+                    'name' => $user->name,
+                    'email' => $user->email,
+                    'roles' => 'visitor',
+                    'gauth_id' => $user->id,
+                    'gauth_type' => 'google',
+                    'password' => encrypt('user@123'),
+                ]);
+                $newUser->markEmailAsVerified();
+                Auth::login($newUser);
+
+                return redirect('/user/home');
+            }
+        } catch (Exception $e) {
+            dd($e->getMessage());
         }
     }
 }

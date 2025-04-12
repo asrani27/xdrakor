@@ -17,12 +17,17 @@ use App\Http\Controllers\TvUserController;
 use App\Http\Controllers\CountryController;
 use App\Http\Controllers\PostUserController;
 use App\Http\Controllers\SuperadminController;
+use App\Http\Controllers\VisitorController;
 
 Route::get('/sitemap.xml', function () {
     $posts = Post::latest()->get(); // Ambil semua berita
 
     return Response::view('sitemap', compact('posts'))->header('Content-Type', 'application/xml');
 });
+
+
+Route::get('oauth/google', [LoginController::class, 'redirectToProvider'])->name('oauth.google');
+Route::get('oauth/google/callback', [LoginController::class, 'handleProviderCallback'])->name('oauth.google.callback');
 
 Route::get('/', [FrontController::class, 'index']);
 Route::get('/offline', [FrontController::class, 'offline']);
@@ -100,6 +105,11 @@ Route::middleware(['superadmin'])->group(function () {
     });
 });
 
+Route::middleware(['visitor'])->group(function () {
+    Route::prefix('visitor')->group(function () {
+        Route::get('/home', [VisitorController::class, 'home']);
+    });
+});
 Route::middleware(['anggota'])->group(function () {
     Route::prefix('user')->group(function () {
         Route::get('/beranda', [UserController::class, 'index']);

@@ -20,6 +20,11 @@ return Application::configure(basePath: dirname(__DIR__))
             'anggota' => \App\Http\Middleware\Anggota::class,
         ]);
     })
+    ->withMiddleware(function (Middleware $middleware) {
+        $middleware->alias([
+            'user' => \App\Http\Middleware\User::class,
+        ]);
+    })
     ->withExceptions(function (Exceptions $exceptions) {
         //
     })->create();
