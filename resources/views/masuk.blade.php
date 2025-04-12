@@ -17,7 +17,7 @@
 </head>
 
 <body class="hold-transition login-page"
-    style="background: rgb(188, 88, 60); background: linear-gradient(48deg, rgb(188, 60, 60) 0%, rgb(249, 197, 187) 100%);">
+    style="background: rgb(188, 88, 60); background: linear-gradient(48deg, #6f42c1 0%, #c0b5d5 100%);">
     <div class="login-box">
         <!-- /.login-logo -->
         <div class="card">
