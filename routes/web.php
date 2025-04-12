@@ -25,6 +25,7 @@ Route::get('/sitemap.xml', function () {
 });
 
 Route::get('/', [FrontController::class, 'index']);
+Route::get('/offline', [FrontController::class, 'offline']);
 Route::get('/adblock', function () {
     return view('adblock');
 });

@@ -20,9 +20,6 @@
             position: relative;
             overflow: hidden;
             background: linear-gradient(to top, #000000 0%, #fffefe 100%);
-
-            background-color: #000000;
-            padding-bottom: env(safe-area-inset-bottom);
             /* Untuk perangkat dengan notch dan nav bar */
         }
 
@@ -54,12 +51,13 @@
             font-weight: bold;
         }
     </style>
+    <!-- manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0d6efd">
 
-    <meta name="theme-color" content="#000000">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    @laravelPWA
+    <!-- icons (optional, agar muncul di layar utama saat install) -->
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    <meta name="mobile-web-app-capable" content="yes">
 </head>
 
 <body>
@@ -70,7 +68,13 @@
 
     <script src="/muvnix/plugins/jquery/jquery.min.js"></script>
     <script src="/muvnix/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(reg => console.log('SW registered:', reg))
+                .catch(err => console.error('SW registration failed:', err));
+        }
+    </script>
 </body>
 
 </html>

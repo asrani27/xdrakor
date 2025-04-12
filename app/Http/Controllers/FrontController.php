@@ -25,6 +25,10 @@ class FrontController extends Controller
             //return view('mobile.home');
         }
     }
+    public function offline()
+    {
+        return 'offline';
+    }
     public function request()
     {
         return view('request');
