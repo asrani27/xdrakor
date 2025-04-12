@@ -68,34 +68,13 @@
 
     <script src="/muvnix/plugins/jquery/jquery.min.js"></script>
     <script src="/muvnix/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script>
+    {{-- <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/service-worker.js')
-                .then(registration => {
-                    console.log('Service Worker registered ✅');
-    
-                    // Auto update when a new version is found
-                    registration.onupdatefound = () => {
-                        const newWorker = registration.installing;
-                        newWorker.onstatechange = () => {
-                            if (newWorker.state === 'installed') {
-                                if (navigator.serviceWorker.controller) {
-                                    // New version detected
-                                    console.log('New service worker available 🔄');
-                                    // Optionally auto-refresh
-                                    window.location.reload();
-                                } else {
-                                    console.log('Service worker installed for the first time.');
-                                }
-                            }
-                        };
-                    };
-                })
-                .catch(error => {
-                    console.error('Service Worker registration failed ❌:', error);
-                });
+                .then(reg => console.log('SW registered:', reg))
+                .catch(err => console.error('SW registration failed:', err));
         }
-    </script>
+    </script> --}}
 </body>
 
 </html>
