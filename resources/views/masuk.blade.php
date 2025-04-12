@@ -47,11 +47,11 @@
                     <div class="row">
                         <!-- /.col -->
                         <div class="col-12 text-center">
-                            {{-- <button type="submit" class="btn bg-gradient-purple float-left"><i
+                            <button type="submit" class="btn bg-gradient-purple float-left"><i
                                     class="fa fa-arrow-right"></i> Log In</button>
                             <button type="submit" class="btn bg-gradient-purple float-right"><i class="fa fa-edit"></i>
                                 Register</button>
-                            <br /><br /> --}}
+                            <br /><br />
                             <strong>OR </strong><br />
                             <a href="https://rekrutmen.banjarmasinmemanggil.com/oauth/google"
                                 class="btn btn-outline-dark btn-block">
@@ -115,7 +115,24 @@
 
     <script src="/muvnix/plugins/jquery/jquery.min.js"></script>
     <script src="/muvnix/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    @stack('js')
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const inputs = document.querySelectorAll('input');
+    
+            inputs.forEach(input => {
+                input.addEventListener('focus', () => {
+                    // Timeout supaya scroll terjadi setelah keyboard muncul
+                    setTimeout(() => {
+                        input.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'center'
+                        });
+                    }, 300);
+                });
+            });
+        });
+    </script>
+
     <script type="text/javascript">
         @include('layouts.notif')
     </script>
