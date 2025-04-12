@@ -34,7 +34,7 @@
             background-image: url('/images/getstarted.jpg');
             background-size: cover;
             background-position: center;
-            opacity: 0.4;
+            /* opacity: 0.4; */
             z-index: -1;
         }
 
