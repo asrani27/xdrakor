@@ -14,6 +14,18 @@
     <link rel="stylesheet" href="/notif/dist/css/iziToast.min.css">
     <script src="/notif/dist/js/iziToast.min.js" type="text/javascript"></script>
     <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(to top, #000000 0%, #fffefe 100%);
+            /* Untuk perangkat dengan notch dan nav bar */
+        }
+
         body::before {
             content: "";
             position: absolute;
